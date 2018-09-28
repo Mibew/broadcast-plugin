@@ -5,7 +5,7 @@ A plugin to broadcast a message.
 At the moment there are four broadcasting modes available:
 
 * to all active chats (i.e. to chats with an operator connected);
-* to all waiting chats (i.e. to chats in a queue and chats where an operator has been disconnected)
+* to all waiting chats (i.e. to chats in a queue and chats where an operator has been disconnected);
 * to all chats except for closed ones;
 * to all operators involved in chats (i.e. to operators in active chats or in active invitations).
 
