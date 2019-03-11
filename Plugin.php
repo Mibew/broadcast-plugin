@@ -126,7 +126,7 @@ class Plugin extends \Mibew\Plugin\AbstractPlugin implements \Mibew\Plugin\Plugi
     {
         if ($this->checkAdmin()) {
             if (!strcmp('/operator/users', $args['request']->getPathInfo())) {
-                $args['js'][] = $this->getFilesPath() . '/js/broadcast.js';
+                $args['js'][] = str_replace(DIRECTORY_SEPARATOR, '/', $this->getFilesPath()) . '/js/broadcast.js';
             }
         }
     }
