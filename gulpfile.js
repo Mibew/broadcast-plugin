@@ -21,9 +21,7 @@ gulp.task('prepare-release', function() {
 });
 
 // Builds and packs plugins sources
-gulp.task('default', ['prepare-release'], function() {
-    // The "default" task is just an alias for "prepare-release" task.
-});
+gulp.task('default', gulp.series('prepare-release'));
 
 /**
  * Returns files stream with the plugin sources.
